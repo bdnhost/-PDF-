@@ -1,11 +1,41 @@
-<div align="center">
+# ממיר PDF עברי לתמליל (גרסה מקומית)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+זוהי גרסה של היישום המוכנה להרצה מקומית על המחשב שלך.
 
-  <h1>Built with AI Studio</h2>
+## דרישות קדם
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- [Node.js](https://nodejs.org/) (גרסה 18 ומעלה מומלצת) - ניתן להוריד מכאן.
+- מפתח API של Google Gemini.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## התקנה והרצה
 
-</div>
+1.  **הורדת קבצי הפרויקט:**
+    הורד את כל קבצי הפרויקט ושמור אותם בתיקייה חדשה במחשב שלך.
+
+2.  **יצירת קובץ סביבה:**
+    - בתוך תיקיית הפרויקט, צור קובץ חדש בשם `.env.local`.
+    - פתח את הקובץ `.env.local` בעורך טקסט (כמו Notepad).
+    - הדבק את השורה הבאה לתוך הקובץ, והחלף את `YOUR_API_KEY_HERE` במפתח ה-API האישי שלך.
+
+    ```
+    VITE_API_KEY="YOUR_API_KEY_HERE"
+    ```
+    - שמור וסגור את הקובץ.
+
+3.  **התקנת תלויות:**
+    - פתח טרמינל (ב-Windows: חפש "Command Prompt" או "PowerShell" בתפריט 'התחל' והפעל אותו).
+    - נווט אל תיקיית הפרויקט באמצעות הפקודה `cd`. לדוגמה: `cd C:\Users\YourUser\Downloads\my-pdf-app`
+    - הרץ את הפקודה הבאה כדי להתקין את כל החבילות הנדרשות. התהליך עשוי לקחת דקה או שתיים.
+    ```bash
+    npm install
+    ```
+
+4.  **הפעלת שרת הפיתוח:**
+    - באותו טרמינל, הרץ את הפקודה הבאה:
+    ```bash
+    npm run dev
+    ```
+
+5.  **פתיחת היישום:**
+    - הטרמינל יציג כתובת URL מקומית, בדרך כלל `http://localhost:5173`.
+    - העתק את הכתובת הזו ופתח אותה בדפדפן האינטרנט שלך כדי להשתמש ביישום.
